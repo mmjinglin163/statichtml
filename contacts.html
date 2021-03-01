@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/common.css" />
+    <script src="read.js"></script>
+    <title>达师兄</title>
+  </head>
+  <script type="text/javascript">
+    myReady(function () {
+      var deviceWidth = document.documentElement.clientWidth
+      document.documentElement.style.fontSize = deviceWidth / 9.6 + 'px'
+    })
+  </script>
+  <style>
+    .smail_panel_contant {
+      padding-left: 50px;
+    }
+    @media only screen and (max-width: 960px) {
+      .footer_content {
+        height: 88px;
+        line-height: 88px;
+      }
+
+      .footer_copyright {
+        text-align: center;
+      }
+    }
+  </style>
+  <body>
+    <div>
+      <div class="header_nav">
+        <img src="./assets/img/logo.png" alt="达师兄" />
+        <ul class="nav_ul">
+          <li><a href="./index.html">首页</a></li>
+          <li><a href="./company_info.html">公司简介</a></li>
+          <li><a href="./product_info.html">产品介绍</a></li>
+          <li class="active">
+            <button class="active_btn choose">联系我们</button>
+          </li>
+          <button class="login_btn">
+            <a href="http://www.dsxdsx.com" target="_Self">登录</a>
+          </button>
+        </ul>
+      </div>
+      <div class="content_banner contacts_banner_bg">
+        <div class="contact_bannar_title">联系我们</div>
+        <div class="banner_content_bg">
+          <p style="z-index: 2">湖北家维乐网络科技有限公司</p>
+        </div>
+      </div>
+    </div>
+    <div
+      class="contact_method content_common"
+      style="border-bottom: 1px dashed #000000"
+    >
+      <div style="font-size: 30px" class="smail_panel_contant">联系方式</div>
+      <div style="display: flex; margin: 50px 50px 50px">
+        <div style="width: 50%">
+          <p style="font-size: 24px; padding-bottom: 13px; color: #999999">
+            联系电话
+          </p>
+          <p style="font-size: 24px; color: #333">18771981566</p>
+        </div>
+        <div>
+          <p style="font-size: 24px; padding-bottom: 13px; color: #999999">
+            E-mail：
+          </p>
+          <p style="font-size: 24px; color: #333">1379526205@qq.com</p>
+        </div>
+      </div>
+    </div>
+    <div class="contact_method content_common" style="padding-bottom: 21px">
+      <div style="font-size: 30px" class="smail_panel_contant">查看路线</div>
+      <div style="margin-top: 50px">
+        <div style="padding-left: 50px">
+          <p style="font-size: 24px; padding-bottom: 13px; color: #999999">
+            公司地址：
+          </p>
+          <p style="font-size: 24px; color: #333">
+            车友路与陶家岭路交叉口西南150米5.5医药健康创新园
+          </p>
+        </div>
+      </div>
+      <div style="border: 1px dashed #000000; margin-top: 47px">
+        <img src="./assets/img/map.png" alt="" />
+      </div>
+    </div>
+
+    <div class="footer_content" style="margin-top: 101px">
+      <div class="footer_addr detailPanel">
+        <span>地址：湖北省武汉市汉阳区5.5医药健康创新园</span>
+        <span>联系电话：136 9733 9452</span>
+        <span>邮箱：609843476@qq.com</span>
+      </div>
+      <div class="footer_copyright">
+        <span
+          >Copyright@2020 湖北家维乐网络科技有限公司 鄂ICP备2020019516号-3</span
+        >
+      </div>
+    </div>
+  </body>
+</html>

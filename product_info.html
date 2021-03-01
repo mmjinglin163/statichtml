@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/common.css" />
+    <script src="read.js"></script>
+    <title>达师兄</title>
+  </head>
+  <script type="text/javascript">
+    myReady(function(){
+             var deviceWidth = document.documentElement.clientWidth
+      document.documentElement.style.fontSize = deviceWidth / 9.6 + 'px'
+        })
+  </script>
+  <style>
+    .product_infoPanel {
+        display: flex;
+        justify-content: center;
+    }
+    .product_infoPanel .content_info {
+        font-size: 18px;
+        padding-right: 99px;
+        text-align: justify;
+        font-weight: 400;
+        color: #333333;
+        width: 612px;
+        line-height: 30px;
+    }
+    @media only screen and (max-width: 960px) {
+        .product_infoPanel {
+            flex-wrap: wrap-reverse;
+        }
+
+        .product_infoPanel .content_info {
+            width: 90%;
+            padding-right: 0;
+        }
+    }
+  </style>
+  <body>
+    <div>
+      <div class="header_nav">
+        <img src="./assets/img/logo.png" alt="达师兄" />
+        <ul class="nav_ul">
+          <li><a href="./index.html">首页</a></li>
+          <li><a href="./company_info.html">公司简介</a></li>
+          <li class="active">
+            <button class="active_btn choose">产品介绍</button>
+          </li>
+          <li><a href="./contacts.html">联系我们</a></li>
+          <button class="login_btn"><a href="http://www.dsxdsx.com" target="_Self">登录</a></button>
+        </ul>
+      </div>
+      <div class="product_banner_bg"></div>
+      <div class="main" style="padding-top: 20px">
+        <div class="title_panel">
+          <div class="company">产品介绍</div>
+          <div class="about_us">PRODUCT</div>
+        </div>
+        <div class="" style="padding: 0">
+          <div class="product_infoPanel">
+            <div class="content_info">
+              <p style="font-size: 30px; font-weight: bold;padding: 18px 0 40px;">达师兄管理系统</p>
+              <p>立足家电服务行业，集20年家电服务管理经验。</p>
+              <p>以客户从业老板为中心，调研百家服务商管理需求、疼点，用心打造智能、高效、无忧的家电服务管理系统。</p>
+              <p>实现服务标准化、过程节点智能化、管理高效化，提升客户管理效率,助客户长远发展。</p>
+              <p>达师兄，致力于做家电服务行业管理提效最好解决方案的供应方。</p>
+              <p>是您管理提效、做大做强、创造财富神话的必然选择！</p>
+              </p>
+            </div>
+            <img
+              src="./assets/img/product_logo.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        style="margin-top: 60px"
+        class="common_panel_back common_panel_min_width"
+      >
+        <div class="order_manage content_common" style="padding-top: 10px">
+          <div class="title_panel">
+            <div class="company">工单管理</div>
+            <div class="about_us">WORK ORDER</div>
+          </div>
+          <div style="width: 100%; display: flex; justify-content: center;overflow: hidden;flex-wrap:wrap; ">
+            <div class="work_item_panel">
+              <img src="./assets/img/work1.png" alt="" />
+              <div class="work_info">
+                <p class="work_title">工单流程化管理</p>
+                <p>减少言传身教式管理</p>
+                <p>降低管理难度</p>
+              </div>
+            </div>
+            <div class="work_item_panel">
+              <img src="./assets/img/work2.png" alt="" />
+              <div class="work_info">
+                <p class="work_title">工单自动分类</p>
+                <p>减少言传身教式管理</p>
+                <p>降低管理难度</p>
+              </div>
+            </div>
+            <div class="work_item_panel">
+              <img src="./assets/img/work3.png" alt="" />
+              <div class="work_info">
+                <p class="work_title">卡顿工单预警自动分类</p>
+                <p>一键查询知重点</p>
+                <p>信息员工作有方向</p>
+              </div>
+            </div>
+            <div class="work_item_panel">
+              <img src="./assets/img/work4.png" alt="" />
+              <div class="work_info">
+                <p class="work_title">各类弹窗充分交互</p>
+                <p>无缝对接</p>
+                <p>信息员被动接收式管理</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="call_center content_common common_panel_min_width">
+        <div class="title_panel">
+          <div class="company">备件管理</div>
+          <div class="about_us">SPARE PARTS</div>
+        </div>
+        <div class="parts_content">
+            <div class="bg_panel spare_bg_panel">
+                <div class="parts_panel inner_panel">
+                    <div class="parts_item" style="margin-top: 8px">
+                      <p class="title">APP申请备件即时弹窗</p>
+                      <p>缺件、有件直观区分，登门人员知备件状态</p>
+                    </div>
+                    <div class="parts_item">
+                      <p class="title">业务场景全覆盖</p>
+                      <p>入库、零售、工程师退新及领件、盘点调差等业务场景全覆盖</p>
+                    </div>
+                    <div class="parts_item">
+                      <p class="title">库存各类预警</p>
+                      <p>常规及储备通用件库存预警、库龄预警等满足客户需求</p>
+                    </div>
+                    <div class="parts_item">
+                      <p class="title">出入库进销存管理</p>
+                      <p>出入库记录进销存管理可视化管理</p>
+                    </div>
+                  </div>
+            </div>
+          <div class="parts_panel detailPanel" style="width: 569px">
+            <div class="parts_item" style="margin-top: 8px">
+              <p class="title">APP申请备件即时弹窗</p>
+              <p>缺件、有件直观区分，登门人员知备件状态</p>
+            </div>
+            <div class="parts_item">
+              <p class="title">业务场景全覆盖</p>
+              <p>入库、零售、工程师退新及领件、盘点调差等业务场景全覆盖</p>
+            </div>
+            <div class="parts_item">
+              <p class="title">库存各类预警</p>
+              <p>常规及储备通用件库存预警、库龄预警等满足客户需求</p>
+            </div>
+            <div class="parts_item">
+              <p class="title">出入库进销存管理</p>
+              <p>出入库记录进销存管理可视化管理</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="common_panel_back common_panel_min_width">
+        <div class="spare_parts content_common">
+          <div class="title_panel">
+            <div class="company">话务中心</div>
+            <div class="about_us">CALL CENTER</div>
+          </div>
+          <div class="parts_content">
+            <div class="parts_panel detailPanel" style="width: 569px">
+              <div class="parts_item" style="margin-top: 8px">
+                <p class="title">一键呼出提升效率</p>
+                <p>提升呼叫联系用户效率</p>
+              </div>
+              <div class="parts_item">
+                <p class="title">一键发短信黏住用户</p>
+                <p>黏住用户，用户需求不扩散</p>
+              </div>
+              <div class="parts_item">
+                <p class="title">录音、短信记录可查</p>
+                <p>录音、短信记录可查、方便取证</p>
+              </div>
+              <div class="parts_item">
+                <p class="title">来电弹窗一键打开工单</p>
+                <p>提升用户来电体验，提高沟通效率</p>
+              </div>
+            </div>
+            <div class="bg_panel callcenter_bg_panel">
+                <div class="parts_panel inner_panel">
+                    <div class="parts_item" style="margin-top: 8px">
+                      <p class="title">一键呼出提升效率</p>
+                      <p>提升呼叫联系用户效率</p>
+                    </div>
+                    <div class="parts_item">
+                      <p class="title">一键发短信黏住用户</p>
+                      <p>黏住用户，用户需求不扩散</p>
+                    </div>
+                    <div class="parts_item">
+                      <p class="title">录音、短信记录可查</p>
+                      <p>录音、短信记录可查、方便取证</p>
+                    </div>
+                    <div class="parts_item">
+                      <p class="title">来电弹窗一键打开工单</p>
+                      <p>提升用户来电体验，提高沟通效率</p>
+                    </div>
+                  </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer_content" style="margin-top: 101px">
+        <div class="footer_addr">
+          <span>地址：湖北省武汉市汉阳区5.5医药健康创新园</span>
+          <span>联系电话：136 9733 9452</span>
+          <span>邮箱：609843476@qq.com</span>
+        </div>
+        <div class="footer_copyright"
+        >
+          <span
+            >Copyright@2020 湖北家维乐网络科技有限公司 鄂ICP备2020019516号-3</span
+          >
+        </div>
+      </div>
+  </body>
+</html>

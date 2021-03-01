@@ -1,0 +1,535 @@
+html,
+body,
+div,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+button {
+  outline: none;
+}
+html,
+body {
+  height: 100%;
+  font-family: 'SourceHanSansSC';
+}
+p {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+img {
+  display: inline-block;
+  height: auto;
+  max-width: 100%;
+}
+/* @font-face {
+  font-family: 'zcoolwenyiti';
+  src: local('zcoolwenyiti'), url('../fonts/zcoolwenyiti.ttf');
+} */
+/* @font-face {
+  font-family: 'SourceHanSansSC';
+  src: local('Source Sans Pro'), url('../fonts/SourceHanSansSC-Regular.otf');
+}
+@font-face {
+  font-family: 'SourceHanSansSC Bold';
+  src: local('SourceHanSansSC Bold'),
+    url('https://laschain.oss-cn-shenzhen.aliyuncs.com/lac-dev/20190905/common/1567650432251SourceHanSansCN-Bold.otf');
+  font-weight: 600;
+} */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background: #535353;
+}
+::-webkit-scrollbar-track {
+  border-radius: 5px;
+  background: #dddddd;
+}
+.header_nav {
+  display: flex;
+  width: 100%;
+  height: 0.69rem;
+  font-size: 0.12rem;
+  justify-content: center;
+  align-items: center;
+  font-family: 'zcoolwenyiti';
+
+  font-weight: 400;
+  color: #222222;
+}
+
+.header_nav > ul.nav_ul > li > a {
+  color: #222222 !important;
+}
+
+.header_nav button {
+  font-family: 'zcoolwenyiti';
+  font-size: 0.12rem;
+}
+.header_nav img {
+  height: 0.25rem;
+  width: 0.985rem;
+  margin-right: 1.755rem;
+}
+
+.content_banner {
+  width: 100%;
+  height: 4.0015rem;
+
+  background-size: 100% 100%;
+  text-align: center;
+}
+.home_banner_bg {
+  background-image: url(../img/banner.png);
+}
+.intro_banner_bg {
+  background-image: url(../img/intro_bg.png);
+}
+.banner_content {
+  position: relative;
+  font-size: 0.36rem;
+  font-weight: bold;
+  color: #ffffff;
+  padding-top: 0.96rem;
+}
+
+.login_btn {
+  padding: 10px 26px;
+  border: 1px solid #cccccc;
+  border-radius: 6px;
+  background: #ffffff;
+  color: #222222;
+}
+.login_btn > a {
+  color: #222222;
+}
+.active_btn {
+  border: 1px solid #00d4bb;
+  border-radius: 6px;
+  background: #00d4bb;
+  padding: 10px 26px;
+  color: #fff;
+}
+
+.active_btn.choose {
+  padding: 10px 10px;
+}
+li.active {
+  margin-right: 35px;
+}
+.btns {
+  font-size: 0;
+  padding-top: 0.63rem;
+}
+
+.btn {
+  width: 1rem;
+  height: 0.32rem;
+  border: 1px solid #ffffff;
+  border-radius: 6px;
+  font-size: 0.115rem;
+  background: transparent;
+  font-weight: 400;
+  color: #ffffff;
+}
+.btn + .btn {
+  margin-left: 0.335rem;
+}
+.green {
+  border: 1px solid #00d4bb;
+  background: #00d4bb;
+}
+
+.title_panel {
+  width: 102px;
+  margin: 0 auto;
+  margin-bottom: 56px;
+  text-align: center;
+}
+.content_common {
+  margin: 0 auto;
+  font-size: 0;
+  padding-top: 32px;
+  padding-bottom: 61px;
+}
+.content_common.title_panel {
+  margin-top: 15px;
+}
+.company {
+  border-bottom: 1px solid #9b9b9b;
+  padding: 7px 0;
+  font-size: 20px;
+  font-family: 'SourceHanSansSC Blod';
+  font-weight: bold;
+  color: #000000;
+}
+.about_us {
+  font-size: 14px;
+  padding: 7px 0;
+}
+.company_content {
+  font-size: 0;
+  width: 1280px;
+  height: 438px;
+  background: #efefef;
+  margin: 0 auto;
+  position: relative;
+}
+
+.black {
+  width: 362px;
+  height: 156px;
+  background: #000000;
+  text-align: center;
+  padding-top: 58px;
+  box-sizing: border-box;
+}
+.black > img {
+  margin: 0 auto;
+  display: block;
+}
+.white {
+  width: 362px;
+  height: 156px;
+  background: #ffffff;
+  text-align: center;
+  padding-top: 58px;
+  box-sizing: border-box;
+}
+.white > img {
+  margin: 0 auto;
+  display: block;
+}
+
+.int_content_text {
+  width: 475px;
+  height: 278px;
+  font-size: 20px;
+  font-weight: 400;
+  color: #222222;
+  line-height: 32px;
+  padding-top: 40px;
+  padding-left: 15px;
+}
+
+.work_info {
+  font-size: 16px;
+  font-family: SourceHanSansSC;
+  color: #000000;
+  line-height: 30px;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+.work_info .work_title {
+  font-size: 20px;
+  font-weight: bold;
+}
+.work_info > img {
+  display: block;
+}
+.work_item_panel + .work_item_panel {
+  /* width: 20%; */
+  margin-left: 38px;
+  /*display: flex; */
+}
+.work_item_panel {
+  text-align: center;
+  align-items: center;
+}
+.parts_content {
+  display: flex;
+  justify-content: center;
+}
+
+.parts_item {
+  font-size: 16px;
+  font-family: 'SourceHanSansSC';
+  font-weight: 400;
+
+  line-height: 24px;
+
+  border: 1px solid #dcdcdc;
+  padding-top: 15px;
+  padding-left: 24px;
+  padding-bottom: 15px;
+}
+
+.parts_item + .parts_item {
+  margin-top: 18px;
+}
+.parts_item .title {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'SourceHanSansSC';
+}
+
+.footer_content {
+  height: 227px;
+  background: #1b252e;
+
+  font-family: SourceHanSansSC;
+  font-weight: 400;
+  color: #727272;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.footer_addr {
+  font-size: 20px;
+  padding-top: 57px;
+}
+
+.contacts_banner_bg {
+  background-image: url(../img/contacts_bg.png);
+}
+
+.contact_bannar_title {
+  font-size: 0.395rem;
+  font-family: zcoolwenyiti;
+  font-weight: 400;
+  color: #ffffff;
+  padding-top: 1.75rem;
+  padding-bottom: 0.2rem;
+  /* line-height: 13px; */
+}
+
+.banner_content_bg {
+  width: 5.39rem;
+  height: 0.49rem;
+  background-color: rgba(255, 255, 255, 0.34);
+  font-size: 0.18rem;
+  font-family: SourceHanSansSC;
+  font-weight: 400;
+  color: #ffffff;
+  line-height: 0.49rem;
+  margin: 0 auto;
+}
+
+.contact_method {
+  width: 1280px;
+
+  /* opacity: 0.5; */
+}
+.product_banner_bg {
+  background-image: url(../img/product_bg.png);
+  width: 100%;
+  height: 0.69rem;
+  background-size: 100% 100%;
+}
+
+a,
+a:hover,
+a:active,
+a:visited,
+a:link,
+a:focus {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+  -webkit-tap-highlight-color: transparent;
+
+  outline: none;
+
+  background: none;
+
+  text-decoration: none;
+}
+
+.common_panel_back {
+  background: #f7f7f7;
+}
+
+.bg_panel {
+  width: 590px;
+  height: 408px;
+
+  background-size: 100% 100%;
+}
+.spare_bg_panel {
+  background-image: url(../img/spare_bg.png);
+  margin-right: 41px;
+}
+.callcenter_bg_panel {
+  background-image: url(../img/call_center.png);
+  margin-left: 41px;
+}
+
+.inner_panel {
+  width: 80%;
+  margin: 0 auto;
+  padding: 15px 0;
+  color: #fff;
+  display: none;
+}
+.company_detailLayout {
+  position: absolute;
+  left: 415px;
+  display: flex;
+  margin: 27px auto;
+}
+.comp_items_list {
+  margin-left: 24px;
+  position: absolute;
+  top: -15px;
+}
+.footer_addr {
+  margin-bottom: 54px;
+}
+.footer_copyright {
+  border-top: 1px #00d4bb solid;
+  font-size: 16px;
+  width: 7.17rem;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+.company_bg {
+  background: url(../img/intro_panel_bg1.png) no-repeat;
+}
+.company_inner_panel {
+  display: none;
+}
+
+@media only screen and (min-width: 1280px) {
+  ul.nav_ul > li {
+    display: inline;
+    list-style: none;
+    margin-right: 45px;
+  }
+  ul.nav_ul > li:last-child {
+    margin-right: 0;
+  }
+  .content_common {
+    width: 1280px;
+  }
+}
+@media only screen and (min-width: 960px) and (max-width: 1280px) {
+  /* body {
+      min-width: 960px;
+    } */
+  ul.nav_ul > li {
+    display: inline;
+    list-style: none;
+    margin-right: 45px;
+  }
+  ul.nav_ul > li:last-child {
+    margin-right: 0;
+  }
+  .content_common {
+    width: 1280px;
+  }
+  .header_nav {
+    display: flex;
+    width: 1280px;
+    height: 92px;
+    font-size: 20px;
+  }
+  .content_banner {
+    width: 1280px;
+    height: 533.5px;
+  }
+
+  .product_banner_bg {
+    width: 1280px;
+    height: 92px;
+  }
+  .footer_content {
+    min-width: 1280px;
+  }
+  .common_panel_min_width {
+    min-width: 1280px;
+  }
+  .header_nav button {
+    font-size: 20px;
+  }
+  .btn {
+    width: 160px !important;
+    height: 51.2px !important;
+    font-size: 16px;
+  }
+  .main {
+    min-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  .nav_ul {
+    display: none;
+  }
+  .header_nav {
+    justify-content: left;
+    padding-left: 10px;
+    box-sizing: border-box;
+  }
+  .btn {
+    width: 120px !important;
+    height: 38.4px !important;
+    font-size: 16px;
+  }
+  .inner_panel {
+    display: block;
+  }
+  .detailPanel {
+    display: none;
+  }
+  .content_common {
+    width: 100%;
+  }
+  .company_content {
+    width: 90%;
+    height: 100%;
+    background: #fff;
+  }
+  .company_detailLayout {
+    position: relative;
+    left: 0;
+  }
+  .spare_bg_panel {
+    margin-right: 0px;
+  }
+  .callcenter_bg_panel {
+    margin-left: 0px;
+  }
+  .work_item_panel + .work_item_panel {
+    margin-left: 0px;
+  }
+  .footer_copyright {
+    border: none;
+    width: 100%;
+    margin: 0;
+  }
+  .common_panel_back {
+    background-color: #fff;
+  }
+  .work_item_panel {
+    width: 50%;
+  }
+  .company_inner_panel {
+    display: block;
+    color: #fff;
+  }
+
+  .footer_addr {
+    padding-left: 20px;
+  }
+
+  .footer_addr > span {
+    display: block;
+    text-align: left;
+  }
+
+  .footer_copyright {
+    text-align: left;
+    padding-left: 20px;
+  }
+  .footer_addr {
+    margin-bottom: 20px;
+  }
+}
