@@ -516,6 +516,7 @@ a:focus {
   }
   .content_common {
     width: 100%;
+    padding: 0 0 10px;
   }
   .company_content {
     width: 90%;
@@ -524,7 +525,6 @@ a:focus {
   }
   .company_detailLayout {
     position: relative;
-    margin: 27px auto;
   }
   .spare_bg_panel {
     background-image: url(../img/spare_bg2.png);
@@ -553,6 +553,7 @@ a:focus {
 
   .footer_addr {
     padding-left: 20px;
+    padding-top: 30px;
   }
 
   .footer_addr > span {
@@ -579,6 +580,8 @@ a:focus {
     height: 100%;
     margin: 0 auto;
     text-align: justify;
+    font-size: 16px;
+    padding-top: 10px;
   }
   .menuImg {
     width: 24px;
@@ -609,9 +612,32 @@ a:focus {
     border-bottom: 1px solid rgba(255, 255, 255, 0.32);
     color: #fff;
   }
-
+  .work_info .work_title {
+    font-size: 16px;
+  }
+  .work_info {
+    font-size: 14px;
+    padding-top: 8px;
+    padding-bottom: 12px;
+  }
+  .title_panel {
+    margin-bottom: 10px;
+  }
   /* .banner_content_bg {
     font-size: 16px;
     min-width: 360px;
   } */
+}
+
+@media only screen and (max-width: 580px) {
+  .inner_panel {
+    width: 90%;
+  }
+  .parts_item {
+    font-size: 16px;
+    padding: 4px 0 4px 5px;
+  }
+  .parts_item .title {
+    font-size: 16px !important;
+  }
 }

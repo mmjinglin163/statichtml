@@ -16,16 +16,59 @@
   <style>
     .smail_panel_contant {
       padding-left: 50px;
+      font-size: 30px;
+    }
+    .textP{
+        font-size: 24px; color: #333;
+    }
+    .textP_title{
+        font-size: 24px; padding-bottom: 13px; color: #999999
+    }
+    .contact_detail{
+        display: flex; margin: 50px 50px 50px;
+    }
+    .map_panel{
+        border: 1px dashed #000000; margin: 47px 50px 0;
+    }
+    .lineBox{
+        height: 1px;border-bottom: 1px dashed #000000;margin: 0 50px;
     }
     @media only screen and (max-width: 960px) {
       .footer_content {
         height: 88px;
-        line-height: 88px;
       }
 
       .footer_copyright {
         text-align: center;
+    vertical-align: middle;
+    display: inline-block;
       }
+      .smail_panel_contant {
+        
+        padding-top: 20px;
+        }
+    }
+    @media only screen and (max-width: 580px) {
+        .smail_panel_contant {
+        padding-left: 20px;
+        font-size: 22px;
+        padding-top: 20px;
+        }
+        .textP{
+        font-size: 16px; 
+    }
+    .textP_title{
+        font-size: 18px; 
+    }
+    .contact_detail{
+        margin: 25px 20px 25px;
+    }
+    .map_panel{
+        margin: 0 20px;
+    }
+    .lineBox{
+        margin: 0 20px;
+    }
     }
   </style>
   <body>
@@ -60,44 +103,42 @@
         </div>
       </div>
     </div>
-    <div
-      class="contact_method content_common"
-      style="border-bottom: 1px dashed #000000"
-    >
-      <div style="font-size: 30px" class="smail_panel_contant">联系方式</div>
-      <div style="display: flex; margin: 50px 50px 50px">
+    <div class="contact_method content_common">
+      <div class="smail_panel_contant">联系方式</div>
+      <div class="contact_detail">
         <div style="width: 50%">
-          <p style="font-size: 24px; padding-bottom: 13px; color: #999999">
+          <p class="textP_title">
             联系电话
           </p>
-          <p style="font-size: 24px; color: #333">18771981566</p>
+          <p class="textP">18771981566</p>
         </div>
         <div>
-          <p style="font-size: 24px; padding-bottom: 13px; color: #999999">
+          <p class="textP_title">
             E-mail：
           </p>
-          <p style="font-size: 24px; color: #333">1379526205@qq.com</p>
+          <p class="textP">1379526205@qq.com</p>
         </div>
       </div>
     </div>
+    <div class="lineBox"></div>
     <div class="contact_method content_common" style="padding-bottom: 21px">
-      <div style="font-size: 30px" class="smail_panel_contant">查看路线</div>
-      <div style="margin-top: 50px">
-        <div style="padding-left: 50px">
-          <p style="font-size: 24px; padding-bottom: 13px; color: #999999">
+      <div class="smail_panel_contant">查看路线</div>
+      <div class="contact_detail">
+        <div>
+          <p class="textP_title">
             公司地址：
           </p>
-          <p style="font-size: 24px; color: #333">
+          <p class="textP">
             车友路与陶家岭路交叉口西南150米5.5医药健康创新园
           </p>
         </div>
       </div>
-      <div style="border: 1px dashed #000000; margin-top: 47px">
+      <div class="map_panel">
         <img src="./assets/img/map.png" alt="" />
       </div>
     </div>
 
-    <div class="footer_content" style="margin-top: 101px">
+    <div class="footer_content">
       <div class="footer_addr detailPanel">
         <span>地址：湖北省武汉市汉阳区5.5医药健康创新园</span>
         <span>联系电话：136 9733 9452</span>
