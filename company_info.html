@@ -50,9 +50,17 @@
     }
   </style>
   <body>
-    <div>
+    <div id="menuId" style="display: none;">
+        <ul class="nav_ul_left">
+            <li><a href="./index.html">首页</a></li>
+            <li>公司简介</li>
+            <li><a href="./product_info.html">产品介绍</a></li>
+            <li><a href="./contacts.html">联系我们</a></li>
+          </ul> 
+      </div>
+    <div id="contentID">
       <div class="header_nav">
-        <img src="./assets/img/logo.png" alt="达师兄" />
+        <img src="./assets/img/logo.png" class="logoimg" alt="达师兄" />
         <ul class="nav_ul">
           <li><a href="./index.html">首页</a></li>
           <li class="active">
@@ -62,6 +70,7 @@
           <li><a href="./contacts.html">联系我们</a></li>
           <button class="login_btn"><a href="http://www.dsxdsx.com" target="_Self">登录</a></button>
         </ul>
+        <img src="./assets/img/menu.png" alt="达师兄" class="menuImg" id="showMenuId"/>
       </div>
       <div class="content_banner intro_banner_bg">
         <div class="contact_bannar_title">更多关于我们</div>
@@ -116,5 +125,20 @@
           >
         </div>
       </div>
+    </div>
+      <script>
+        var box = document.getElementById('menuId');
+        var showMenuElement = document.getElementById('showMenuId');
+        var closeHideElem = document.getElementById('contentID');
+        showMenuElement.onclick = function (target) {
+            console.info("click is :"+this.id)
+            box.style.display = "block";
+            target.stopPropagation()
+        }
+        closeHideElem.onclick = function(target){
+            console.info("click is :"+this.id)
+            box.style.display = "none";
+        }
+    </script>
   </body>
 </html>

@@ -14,9 +14,17 @@
         })
   </script>
   <body>
-    <div>
+    <div id="menuId" style="display: none;">
+        <ul class="nav_ul_left">
+            <li>首页</li>
+            <li><a href="./company_info.html">公司简介</a></li>
+            <li><a href="./product_info.html">产品介绍</a></li>
+            <li><a href="./contacts.html">联系我们</a></li>
+          </ul> 
+      </div>
+    <div id="contentID">
       <div class="header_nav">
-        <img src="./assets/img/logo.png" alt="达师兄" />
+        <img src="./assets/img/logo.png" class="logoimg" alt="达师兄" />
         <ul class="nav_ul">
           <li><button class="active_btn">首页</button></li>
           <li><a href="./company_info.html">公司简介</a></li>
@@ -26,7 +34,9 @@
             <a href="http://www.dsxdsx.com" target="_Self">登录</a>
           </button>
         </ul>
+        <img src="./assets/img/menu.png" alt="达师兄" class="menuImg" id="showMenuId"/>
       </div>
+     
       <div class="content_banner home_banner_bg">
         <div class="banner_content">
           <div style="padding-bottom: 0.18rem">达师兄为您提供</div>
@@ -73,20 +83,24 @@
             </div>
           </div>
           <div class="company_detailLayout">
-            <!-- <div class="company_bg">
+            <div class="company_bg">
                 <div class="int_content_text company_inner_panel" style="text-align: text">
-                    &nbsp;&nbsp;&nbsp;&nbsp;湖北家维乐网络科技有限公司是有着多年家电服务管理经验的资深团队创建。公司调研了百家服务商管理需求，充分分析了家电服务管理各版块的难点、痛点，结合一线品牌厂家管理要求，以及家电行业普遍的服务及时性、服务规范性、
-                    服务有效性，用户服务体验等管理要求，充分调研，精心设计，用心打造出智能、高效、无忧的达师兄家电管理提效系统。
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;湖北家维乐网络科技有限公司是有着多年家电服务管理经验的资深团队创建。公司调研了百家服务商管理需求，充分分析了家电服务管理各版块的难点、痛点，结合一线品牌厂家管理要求，以及家电行业普遍的服务及时性、服务规范性、
+                        服务有效性，用户服务体验等管理要求，充分调研，精心设计，用心打造出智能、高效、无忧的达师兄家电管理提效系统。</p>
+                        <img src="./assets/img/more.png" style="
+                        float: right;
+                        padding-top: 20px;
+                    ">
                   </div>
-            </div> -->
-            <img src="./assets/img/intro_panel_bg1.png" style="width:342px;height: 363px;" alt="">
+            </div>
+            <!-- <img src="./assets/img/intro_panel_bg1.png" style="width:342px;height: 363px;" alt=""> -->
             <div class="int_content_text detailPanel" style="text-align: justify">
               <p>&nbsp;&nbsp;&nbsp;&nbsp;湖北家维乐网络科技有限公司是有着多年家电服务管理经验的资深团队创建。公司调研了百家服务商管理需求，充分分析了家电服务管理各版块的难点、痛点，结合一线品牌厂家管理要求，以及家电行业普遍的服务及时性、服务规范性、
               服务有效性，用户服务体验等管理要求，充分调研，精心设计，用心打造出智能、高效、无忧的达师兄家电管理提效系统。</p>
-              <img src="./assets/img/more.png" style="
+              <a href="./company_info.html"><img src="./assets/img/more.png" style="
               float: right;
               padding-top: 20px;
-          ">
+          "></a>
             </div>
           </div>
         </div>
@@ -244,5 +258,19 @@
         >
       </div>
     </div>
+    <script>
+        var box = document.getElementById('menuId');
+        var showMenuElement = document.getElementById('showMenuId');
+        var closeHideElem = document.getElementById('contentID');
+        showMenuElement.onclick = function (target) {
+            console.info("click is :"+this.id)
+            box.style.display = "block";
+            target.stopPropagation()
+        }
+        closeHideElem.onclick = function(target){
+            console.info("click is :"+this.id)
+            box.style.display = "none";
+        }
+    </script>
   </body>
 </html>

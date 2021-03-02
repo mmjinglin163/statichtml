@@ -72,7 +72,7 @@ img {
   font-family: 'zcoolwenyiti';
   font-size: 0.12rem;
 }
-.header_nav img {
+.header_nav .logoimg {
   height: 0.25rem;
   width: 0.985rem;
   margin-right: 1.755rem;
@@ -208,14 +208,11 @@ li.active {
 }
 
 .int_content_text {
-  width: 475px;
-  height: 278px;
   font-size: 20px;
   font-weight: 400;
   color: #222222;
   line-height: 32px;
   padding-top: 40px;
-  padding-left: 15px;
 }
 
 .work_info {
@@ -331,13 +328,9 @@ a:visited,
 a:link,
 a:focus {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-
   -webkit-tap-highlight-color: transparent;
-
   outline: none;
-
   background: none;
-
   text-decoration: none;
 }
 
@@ -351,14 +344,6 @@ a:focus {
 
   background-size: 100% 100%;
 }
-.spare_bg_panel {
-  background-image: url(../img/spare_bg.png);
-  margin-right: 41px;
-}
-.callcenter_bg_panel {
-  background-image: url(../img/call_center.png);
-  margin-left: 41px;
-}
 
 .inner_panel {
   width: 80%;
@@ -367,12 +352,7 @@ a:focus {
   color: #fff;
   display: none;
 }
-.company_detailLayout {
-  position: absolute;
-  left: 415px;
-  display: flex;
-  margin: 27px auto;
-}
+
 .comp_items_list {
   margin-left: 24px;
   position: absolute;
@@ -388,9 +368,7 @@ a:focus {
   margin: 0 auto;
   box-sizing: border-box;
 }
-.company_bg {
-  background: url(../img/intro_panel_bg1.png) no-repeat;
-}
+
 .company_inner_panel {
   display: none;
 }
@@ -406,6 +384,34 @@ a:focus {
   }
   .content_common {
     width: 1280px;
+  }
+  .company_bg {
+    background: url(../img/intro_panel_bg1.png) no-repeat;
+    width: 342px;
+    height: 363px;
+    background-size: 100% 100%;
+  }
+  .company_detailLayout {
+    position: absolute;
+    left: 415px;
+    display: flex;
+    margin: 27px auto;
+  }
+  .int_content_text {
+    width: 475px;
+    height: 278px;
+    padding-left: 15px;
+  }
+  .spare_bg_panel {
+    background-image: url(../img/spare_bg.png);
+    margin-right: 41px;
+  }
+  .callcenter_bg_panel {
+    background-image: url(../img/call_center.png);
+    margin-left: 41px;
+  }
+  .menuImg {
+    display: none;
   }
 }
 @media only screen and (min-width: 960px) and (max-width: 1280px) {
@@ -457,6 +463,35 @@ a:focus {
     width: 100%;
     margin: 0 auto;
   }
+  .company_bg {
+    background: url(../img/intro_panel_bg1.png) no-repeat;
+    width: 342px;
+    height: 363px;
+    background-size: 100% 100%;
+  }
+  .company_detailLayout {
+    position: absolute;
+    left: 415px;
+    display: flex;
+    margin: 27px auto;
+  }
+
+  .int_content_text {
+    width: 475px;
+    height: 278px;
+    padding-left: 15px;
+  }
+  .spare_bg_panel {
+    background-image: url(../img/spare_bg.png);
+    margin-right: 41px;
+  }
+  .callcenter_bg_panel {
+    background-image: url(../img/call_center.png);
+    margin-left: 41px;
+  }
+  .menuImg {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 960px) {
@@ -489,13 +524,13 @@ a:focus {
   }
   .company_detailLayout {
     position: relative;
-    left: 0;
+    margin: 27px auto;
   }
   .spare_bg_panel {
-    margin-right: 0px;
+    background-image: url(../img/spare_bg2.png);
   }
   .callcenter_bg_panel {
-    margin-left: 0px;
+    background-image: url(../img/call_center2.png);
   }
   .work_item_panel + .work_item_panel {
     margin-left: 0px;
@@ -532,4 +567,51 @@ a:focus {
   .footer_addr {
     margin-bottom: 20px;
   }
+  .company_bg {
+    background: url(../img/intro_panel_bg_phone.png) no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding-bottom: 10%;
+  }
+
+  .int_content_text {
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    text-align: justify;
+  }
+  .menuImg {
+    width: 24px;
+    height: 19px;
+    position: absolute;
+    right: 10px;
+  }
+  .nav_ul_left {
+    position: fixed;
+    right: 0;
+    top: 0;
+    background: rgba(27, 37, 46, 0.9);
+    width: 160px;
+    height: 100%;
+    font-size: 20px;
+    z-index: 3;
+    list-style: none;
+    font-weight: 500;
+    color: #e7e7e7;
+  }
+  .nav_ul_left > li > a {
+    color: #e7e7e7;
+  }
+  .nav_ul_left > li {
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.32);
+    color: #fff;
+  }
+
+  /* .banner_content_bg {
+    font-size: 16px;
+    min-width: 360px;
+  } */
 }
